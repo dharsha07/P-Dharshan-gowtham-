@@ -14,9 +14,17 @@
     }
 
     body {
-      background-color: #002f6c; /* Full deep blue background */
+      background-color: #002f6c;
       color: #ffffff;
       padding: 2rem;
+      opacity: 0;
+      animation: fadeInBody 1.5s ease forwards;
+    }
+
+    @keyframes fadeInBody {
+      to {
+        opacity: 1;
+      }
     }
 
     header {
@@ -26,6 +34,7 @@
       text-align: center;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      animation: fadeInUp 1s ease-out;
     }
 
     header h1 {
@@ -44,20 +53,23 @@
       margin: 0 0.5rem;
       border-radius: 6px;
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      transition: all 0.3s ease;
+      display: inline-block;
     }
 
     nav a:hover {
       background-color: #003f75;
+      transform: scale(1.05);
     }
 
     .content {
       max-width: 900px;
       margin: 3rem auto;
-      background-color: rgba(255, 255, 255, 0.1); /* translucent panel */
+      background-color: rgba(255, 255, 255, 0.1);
       padding: 2rem 3rem;
       border-radius: 12px;
       box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+      animation: fadeInUp 1.5s ease;
     }
 
     .content h2 {
@@ -66,11 +78,64 @@
       font-size: 2rem;
     }
 
+    .about, .skills, .certifications {
+      margin-top: 3rem;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    .skills {
+      animation-delay: 0.8s;
+    }
+
+    .certifications {
+      animation-delay: 1s;
+    }
+
+    .about ul, .skills ul, .certifications ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .about li, .skills li {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    .skills li::before {
+      content: "★ ";
+      color: #aad4ff;
+      margin-right: 0.3rem;
+    }
+
+    .certifications li {
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 1rem;
+      border-radius: 10px;
+      border-left: 4px solid #aad4ff;
+    }
+
     footer {
       text-align: center;
       margin-top: 4rem;
       font-size: 0.9rem;
       color: #cce6ff;
+      animation: fadeInUp 2s ease;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @media (max-width: 768px) {
@@ -110,6 +175,48 @@
     <p>
       Connect with me through the links above and stay tuned for more engaging content.
     </p>
+
+    <div class="about">
+      <h2>About Me</h2>
+      <ul>
+        <li><strong>Date of Birth:</strong> 29 May 2025</li>
+        <li><strong>Place:</strong> Tamil Nadu, Madurai</li>
+        <li><strong>School:</strong> PSY Matriculation School</li>
+        <li><strong>College Joining:</strong> Mepco Engineering College, Sivakasi</li>
+        <li><strong>Course:</strong> B.Tech Information Technology</li>
+        <li><strong>Aim:</strong> To become an interpreter in software development</li>
+      </ul>
+    </div>
+
+    <div class="skills">
+      <h2>My Skills</h2>
+      <ul>
+        <li>Beginner in Data Analytics</li>
+        <li>Basic Knowledge of Artificial Intelligence (AI)</li>
+        <li>Python Programming Fundamentals</li>
+        <li>This is my first web project!</li>
+      </ul>
+    </div>
+
+    <div class="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>
+          <strong>Course:</strong> Introduction to Data Analytics<br />
+          <strong>Platform:</strong> Simplilearn SkillUp<br />
+          <strong>Certificate Code:</strong> 8663441<br />
+          <strong>Date:</strong> 21 July 2025<br />
+          <strong>Issued by:</strong> Krishna Kumar, CEO, Simplilearn
+        </li>
+        <li>
+          <strong>Course:</strong> AI for Beginners<br />
+          <strong>Platform:</strong> HP LIFE (HP Foundation)<br />
+          <strong>Certificate Code:</strong> e8743<br />
+          <strong>Date:</strong> 17 July 2025<br />
+          <strong>Issued by:</strong> Stephanie Bormann, Deputy Director, HP Foundation
+        </li>
+      </ul>
+    </div>
   </section>
 
   <footer>
