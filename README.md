@@ -1,120 +1,117 @@
-# P-Dharshan-gowtham-                 <!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dharashan Gowtham | Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
+
     body {
-      background: linear-gradient(to right, #ffecd2, #fcb69f);
-      color: #333;
-      padding: 1rem;
-    }
-    header {
-      text-align: center;
-      padding: 2rem 0;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      color: #d64b4b;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin: 1rem 0;
-    }
-    nav a {
-      color: #fff;
-      background: #ff6f61;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      background: #e94e3e;
-    }
-    .content {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
+      background-color: #002f6c; /* Full deep blue background */
+      color: #ffffff;
       padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .gallery {
-      margin-top: 2rem;
+
+    header {
+      background-color: #005fa3;
+      color: #ffffff;
+      padding: 3rem 1rem;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     }
-    .gallery h2 {
+
+    header h1 {
+      font-size: 3rem;
       margin-bottom: 1rem;
-      color: #d64b4b;
     }
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1rem;
+
+    nav {
+      margin-top: 1rem;
     }
-    .gallery-grid img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
+
+    nav a {
+      color: #ffffff;
+      background-color: #0077cc;
+      padding: 0.6rem 1.2rem;
+      margin: 0 0.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
     }
-    .gallery-grid img:hover {
-      transform: scale(1.05);
+
+    nav a:hover {
+      background-color: #003f75;
     }
+
+    .content {
+      max-width: 900px;
+      margin: 3rem auto;
+      background-color: rgba(255, 255, 255, 0.1); /* translucent panel */
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .content h2 {
+      color: #aad4ff;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
     footer {
       text-align: center;
-      margin-top: 3rem;
+      margin-top: 4rem;
       font-size: 0.9rem;
-      color: #555;
+      color: #cce6ff;
     }
-    @media (max-width: 600px) {
+
+    @media (max-width: 768px) {
       header h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
+
       .content {
-        padding: 1rem;
+        padding: 1.5rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin-top: 0.5rem;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Dharashan Gowtham's Blog</h1>
+    <h1>Dharashan Gowtham</h1>
     <nav>
       <a href="https://wa.me/yourwhatsapplink" target="_blank">WhatsApp</a>
       <a href="https://www.instagram.com/dharshangowtham_?igsh=bG9sZGpxemRrNzd5" target="_blank">Instagram</a>
       <a href="https://www.linkedin.com/in/dharshan-gowtham-297396372?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
     </nav>
   </header>
-  <section class="content">
-    <h2>Welcome!</h2>
-    <p>
-      Hello! I'm Dharashan Gowtham, and this is my personal blog where I share ideas,
-      thoughts, and experiences on anything that inspires me — from technology and lifestyle
-      to creativity and beyond. Thanks for visiting!
-    </p>
-    <br>
-    <p>
-      Stay tuned for blog updates soon. Feel free to connect with me through the links above!
-    </p><div class="gallery">
-  <h2>Image Gallery</h2>
-  <div class="gallery-grid">
-    <img src="https://chat.openai.com/cdn-cgi/imagedelivery/yoJZHXx73Dymef1jG0gZ4A/b3c7cb3e-10df-4bbf-9e52-c6207557b6f1/public" alt="Certificate 1">
-    <img src="https://chat.openai.com/cdn-cgi/imagedelivery/yoJZHXx73Dymef1jG0gZ4A/01cccd82-e015-4a9e-b4eb-b4f5c3c37a6e/public" alt="Certificate 2">
-  </div>
-</div>
 
+  <section class="content">
+    <h2>Welcome to My Blog</h2>
+    <p>
+      Hi, I’m Dharashan Gowtham. This is my space where I share my journey,
+      passions, and ideas on a variety of topics including technology, creativity,
+      self-growth, and more. Whether you're here for inspiration, connection,
+      or curiosity — I'm glad to have you here!
+    </p>
+    <p>
+      Connect with me through the links above and stay tuned for more engaging content.
+    </p>
   </section>
+
   <footer>
     <p>&copy; 2025 Dharashan Gowtham. All rights reserved.</p>
   </footer>
